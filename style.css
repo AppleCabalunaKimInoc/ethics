@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+  font-family: "Garamond", "Times New Roman", serif;
+  background-color: #f8f9fa;
+  color:black;
+}
+
+/* Search Results Styles */
+.search-result-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-color:black;
+}
+
+.search-result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.read-more-btn {
+  background-color: #001BAB;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #001BAB;
+}
+
+/* Wikipedia-like Layout Styles */
+.wiki-layout {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+}
+
+.wiki-sidebar {
+  position: sticky;
+  top: 20px;
+}
+
+#articleContent {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+#articleContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaecef;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+#articleContent h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #eaecef;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+#articleContent h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+#articleContent p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+#articleContent blockquote {
+  border-left: 4px solid #6c757d;
+  padding-left: 1rem;
+  margin-left: 0;
+  color: #495057;
+  font-style: italic;
+}
+
+#articleContent .article-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+#articleContent .article-image-caption {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#tableOfContents li,
+#relatedTopics li {
+  margin-bottom: 0.5rem;
+}
+
+#tableOfContents a,
+#relatedTopics a {
+  color: #495057;
+  text-decoration: none;
+}
+
+#tableOfContents a:hover,
+#relatedTopics a:hover {
+  text-decoration: underline;
+  color: #212529;
+}
+
+/* Loading Indicator */
+.loading-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.25rem solid rgba(73, 80, 87, 0.3);
+  border-radius: 50%;
+  border-top-color: #495057;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .wiki-sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  #articleContent h1 {
+    font-size: 2rem;
+  }
+
+  #articleContent h2 {
+    font-size: 1.5rem;
+  }
+
+  #articleContent h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Custom styles for philosophy content */
+.philosopher-dates {
+  font-style: italic;
+  color: black;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.key-concept {
+  font-weight: bold;
+  color: #495057;
+}
+
+.btn-primary {
+  background-color: #001BAB;
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: #001BAB;
+  border-color: white;
+}
+
+.btn-secondary {
+  background-color: #001BAB;
+  border-color: #001BAB;
+}
+
+.btn-secondary:hover {
+  background-color: #001BAB;
+  border-color: #001BAB;
+}
+
+header.bg-dark {
+  background-color: #001BAB !important;
+}
+
+footer.bg-dark {
+  background-color: #001BAB !important;
+}
+
+.philosopher-link {
+  color: #495057;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dotted #6c757d;
+}
+
+.philosopher-link:hover {
+  color: #212529;
+  text-decoration: none;
+  border-bottom: 1px solid #212529;
+}
+
+.related-philosopher {
+  color: #495057;
+  text-decoration: none;
+}
+
+.related-philosopher:hover {
+  text-decoration: underline;
+  color: #212529;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border-color: #dee2e6;
+}
